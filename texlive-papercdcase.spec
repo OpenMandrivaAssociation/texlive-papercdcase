@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /macros/latex/contrib/papercdcase
+# catalog-date 2007-03-11 14:35:09 +0100
+# catalog-license lppl
+# catalog-version undef
 Name:		texlive-papercdcase
 Version:	20070311
 Release:	1
@@ -44,6 +50,7 @@ style folding paper CD cases.
 #- source
 %doc %{_texmfdistdir}/source/latex/papercdcase/papercdcase.dtx
 %doc %{_texmfdistdir}/source/latex/papercdcase/papercdcase.ins
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -54,3 +61,5 @@ style folding paper CD cases.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
