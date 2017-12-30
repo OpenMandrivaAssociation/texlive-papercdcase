@@ -5,8 +5,8 @@
 # catalog-license lppl
 # catalog-version undef
 Name:		texlive-papercdcase
-Version:	20070311
-Release:	10
+Version:	20170414
+Release:	1
 Summary:	Origami-style folding paper CD case
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/papercdcase
