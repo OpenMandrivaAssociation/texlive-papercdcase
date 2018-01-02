@@ -1,9 +1,3 @@
-# revision 15878
-# category Package
-# catalog-ctan /macros/latex/contrib/papercdcase
-# catalog-date 2007-03-11 14:35:09 +0100
-# catalog-license lppl
-# catalog-version undef
 Name:		texlive-papercdcase
 Version:	20170414
 Release:	1
@@ -33,13 +27,10 @@ style folding paper CD cases.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/tex/latex/papercdcase/papercdcase.sty
-%doc %{_texmfdistdir}/doc/latex/papercdcase/example.tex
-%doc %{_texmfdistdir}/doc/latex/papercdcase/interactive.tex
-%doc %{_texmfdistdir}/doc/latex/papercdcase/papercdcase.pdf
+%{_texmfdistdir}/tex/latex/papercdcase
+%doc %{_texmfdistdir}/doc/latex/papercdcase
 #- source
-%doc %{_texmfdistdir}/source/latex/papercdcase/papercdcase.dtx
-%doc %{_texmfdistdir}/source/latex/papercdcase/papercdcase.ins
+%doc %{_texmfdistdir}/source/latex/papercdcase
 
 #-----------------------------------------------------------------------
 %prep
@@ -50,17 +41,3 @@ style folding paper CD cases.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20070311-2
-+ Revision: 754638
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20070311-1
-+ Revision: 719186
-- texlive-papercdcase
-- texlive-papercdcase
-- texlive-papercdcase
-- texlive-papercdcase
-
